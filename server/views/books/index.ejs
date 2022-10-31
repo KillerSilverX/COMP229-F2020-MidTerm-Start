@@ -14,10 +14,10 @@
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>title</th>
-                  <th class="text-center">price</th>
-                  <th class="text-center">author</th>
-                  <th class="text-center">genre</th>
+                  <th>Title</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Author</th>
+                  <th class="text-center">Genre</th>
                   <th class="text-center"></th>
                   <th class="text-center"></th>
                 </tr>
@@ -35,7 +35,7 @@
                     <!-- ------------------------ -->
                     <!-- ADD the EDIT BUTTON HERE -->
                     <!-- ------------------------ -->
-                        <a href="/books/edit" class="btn btn-primary btn-sm">
+                        <a href="/books/edit/<%= books[count]._id %>" class="btn btn-primary btn-sm">
                             <i class="fas fa-pencil-alt"></i> Edit</a>
                   </td>
 
@@ -43,7 +43,7 @@
                     <!-- ------------------------ -->
                     <!-- ADD the DELETE BUTTON HERE -->
                     <!-- ------------------------ -->
-                        <a href="/books/delete" class="btn btn-danger btn-sm">
+                        <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger btn-sm">
                             <i class="fas fa-trash-alt"></i> Delete</a>
 
                   </td>
